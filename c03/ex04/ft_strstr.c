@@ -6,7 +6,7 @@
 /*   By: rkandiyi <rkandiyi@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/15 16:03:41 by rkandiyi          #+#    #+#             */
-/*   Updated: 2022/08/15 21:12:26 by rkandiyi         ###   ########.fr       */
+/*   Updated: 2022/08/20 15:45:36 by rkandiyi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -21,18 +21,18 @@ char	*ft_strstr(char *str, char *to_find)
 		return (str);
 	while (*str != '\0')
 	{
-		if(*str == *to_find)
+		if (*str == *to_find)
 		{
-		   i = 0;
-		   tmp = 0;
-		   while (to_find[i] != '\0')
-		   {
-			   if (str[i] != to_find[i])
-				   tmp = 1;
-			   i++;
-		   }
-		   if (tmp == 0)
-			   return (str);
+			i = 0;
+			tmp = 0;
+			while (to_find[i] != '\0')
+			{
+				if (str[i] != to_find[i])
+					tmp = 1;
+				i++;
+			}
+			if (tmp == 0)
+				return (str);
 		}
 		str++;
 	}

@@ -6,7 +6,7 @@
 /*   By: rkandiyi <rkandiyi@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/11 14:15:10 by rkandiyi          #+#    #+#             */
-/*   Updated: 2022/08/15 17:36:05 by rkandiyi         ###   ########.fr       */
+/*   Updated: 2022/08/22 18:39:51 by rkandiyi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -19,6 +19,7 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	unsigned int	i;
 
 	count = 0;
+	i = 0;
 	while (src[count] != '\0')
 		count++;
 	if (size != 0)
